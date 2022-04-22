@@ -1,0 +1,9 @@
+<h1>Convert <%=@start%></h1>
+
+<p>Go <a href = "/forex">back</a>.</p>
+
+<ul>
+  <% @symbols.each do |sym|%>
+    <li><a href = "/forex/<%=@start%>/<%=sym%>">Convert 1 <%=@start%> to <%=sym%>...</a></li>
+  <% end %>
+</ul>
